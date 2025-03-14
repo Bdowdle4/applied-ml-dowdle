@@ -1,4 +1,4 @@
-# applied-ml-template
+# Dowdle - 44670-80/81 Module 1 Lab - applied-ml-template
 
 Start by copying this template repository into your GitHub account. Replace "template" with your name or alias, e.g. applied-ml-case.
 
