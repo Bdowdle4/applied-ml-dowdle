@@ -1,7 +1,7 @@
 # Dowdle's Module 1 Lab Introduction
 In this module we will take a broad view of Machine Learning and it's applications. We will get a first look at the tool we will use throughout the course (JupyterLab with Scikit-Learn). We discussed some of the basic concepts for machine learning and set up our computational resources.
 
-[Clickable Link Notebook](https://github.com/Bdowdle4/applied-ml-dowdle/blob/main/lab01/ml01.ipynb)
+[Clickable Link to Notebook](https://github.com/Bdowdle4/applied-ml-dowdle/blob/main/lab01/ml01.ipynb)
 
 ## Virtual Enviornment Set Up (Windows Users)
 **Task 1. Create .venv** Run the following command from the project root directory. Use PowerShell (not cmd):
@@ -22,7 +22,7 @@ Do you want to select it for the workspace folder? Click Yes.
 ## Run Jupyter Notebook Locally
 **Before Starting** Ensure the .venv is activated. If it is already active, you don't need to reactivate it.
 
-**Install the Jupyter Extension for VS Code** Open the Extensions view in VS Code by pressing Ctrl+Shift+X (Windows/Linux) or Cmd+Shift+X (Mac). Search for "Jupyter" and install the official extension.
+**Install the Jupyter Extension for VS Code** Open the Extensions view in VS Code by pressing Ctrl+Shift+X (Windows). Search for "Jupyter" and install the official extension.
 
 **Open the Notebook in VS Code** Open the notebook in VS Code. The file will have a .ipynb extension.
 
@@ -114,8 +114,6 @@ Include a professional README.md. Include:
 - an introduction to your project
 - a clickable link to your notebook file.
 - Instructions on how to set up your virtual environment and run your notebook locally.
-   
-If starting with an assignment README, remove the parts you do not need to present your project.
 
 ---
 
