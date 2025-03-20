@@ -1,5 +1,5 @@
 # Dowdle's Module 2 Lab Introduction
-In this module, we discussed the process of acquiring and evaluating data.  And we learned some common techniques for cleaning data in preparation to training a model. 
+In this module, we discussed the process of acquiring and evaluating data. We learned some basic tools to view the data to determine its quality, some common techniques for cleaning data, and to transform the given features in preparation to training a model. 
 
 [Clickable Link to Notebook](https://github.com/Bdowdle4/applied-ml-dowdle/blob/main/lab01/ml01.ipynb)
 
