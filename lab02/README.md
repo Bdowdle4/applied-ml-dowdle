@@ -1,7 +1,7 @@
 # Dowdle's Module 2 Lab Introduction
 In this module, we discussed the process of acquiring and evaluating data. We learned some basic tools to view the data to determine its quality, some common techniques for cleaning data, and to transform the given features in preparation to training a model. 
 
-[Clickable Link to Notebook](https://github.com/Bdowdle4/applied-ml-dowdle/blob/main/lab01/ml01.ipynb)
+[Clickable Link to Notebook](https://github.com/Bdowdle4/applied-ml-dowdle/blob/main/lab02/ml02_dowdle.ipynb)
 
 ## Virtual Enviornment Set Up (Windows Users)
 **Task 1. Create .venv** Run the following command from the project root directory. Use PowerShell (not cmd):
