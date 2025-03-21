@@ -47,15 +47,13 @@ Do you want to select it for the workspace folder? Click Yes.
 ---
 
 ## Overview
-Businesses and organizations often need to understand the relationships between different factors to make better decisions.
-For example, a company may want to predict the fuel efficiency of a car based on its weight and engine size or estimate home prices based on square footage and location.
-Regression analysis helps identify and quantify these relationships between numerical features, providing insights that can be used for forecasting and decision-making.
+Businesses and organizations often need to categorize data to make informed decisions. For example, a company may want to predict whether a customer will purchase a product based on their browsing behavior or determine if an email is spam based on its content. Classification analysis helps identify patterns and assign labels to data points, enabling accurate predictions and informed decision-making.
 
-This project demonstrates your ability to apply regression modeling techniques to a real-world dataset. You will:
+This project demonstrates your ability to apply classification techniques to a real-world dataset. You will:
 - Load and explore a dataset.
 - Choose and justify features for predicting a target variable.
-- Train a regression model and evaluate performance.
-- Compare multiple regression approaches.
+- Train a classification model and evaluate performance.
+- Compare multiple classification approaches.
 - Document your work in a structured Jupyter Notebook.
 
 ## Project Outline
@@ -71,32 +69,30 @@ Start your notebook professionally with:
 
 Present your work in clearly numbered second-level and third-level headings
 
-### Section 1. Load and Explore the Data
-- 1.1 Load the dataset and display the first 10 rows.
-- 1.2 Check for missing values and display summary statistics.
+### Section 1. Import and Inspect the Data
+What methods do you already know to inspect the data? Use these common methods every time you load a new dataset.
 
 Analysis: What do you notice about the dataset? Are there any data issues?
 
-### Section 2. Visualize Feature Distributions
-- 2.1 Create histograms, boxplots, and scatterplots.
-- 2.2 Identify patterns or anomalies in feature distributions.
+### Section 2. Data Exploration and Preparation
+- 2.1 Explore Data Patterns and Distributions
+- 2.2 Handle Missing Values and Clean Data
+- 2.3 Feature Engineering
 
 Analysis: What patterns or anomalies do you see? Do any features stand out?
 
 ### Section 3. Feature Selection and Justification
-- 3.1 Choose two input features for predicting the target.
-- 3.2 Justify your selection with reasoning.
+- 3.1 Choose features and target
+- 3.2 Define X and y
 
 Analysis: Why did you choose these features? How might they impact predictions?
 
-### Section 4. Train a Linear Regression Model
-- 4.1 Define X (features) and y (target).
-- 4.2 Train a Linear Regression model using Scikit-Learn.
-- 4.3 Report R^2, MAE, RMSE.
+### Section 4. Splitting
+- 4.1 Basic Train/Test split
+- 4.2 Stratified Train/Test split
+- 4.3 Compare Results
 
 Analysis: How well did the model perform? Any surprises in the results?
-
-See [EXAMPLE_ANALYSIS](./docs/EXAMPLE_ANALYSIS.md) for more.
 
 ---
 
@@ -118,11 +114,15 @@ Include a professional README.md. Include:
 ---
 
 ## Dataset 
-Housing Prices Dataset (Predict home values based on features like square footage and location)  
-- We use the built-in dataset from scikit-learn:  
-   - `from sklearn.datasets import fetch_california_housing`  
-- Additional dataset available on Kaggle:  
-   - [Kaggle Housing Prices](https://www.kaggle.com/c/house-prices-advanced-regression-techniques)  
+Titanic Dataset (Predict survival based on passenger features like age, gender, and class)
+
+- We use the built-in dataset from Seaborn:
+   ```
+   import seaborn as sns
+   titanic = sns.load_dataset("titanic")
+   ```
+- Additional dataset available on Kaggle:
+   [Kaggle Titanic](https://www.kaggle.com/datasets/akshaysehgal/titanic-data-for-data-preprocessing)
 
 --- 
 
