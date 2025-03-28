@@ -1,7 +1,7 @@
 # Dowdle's Module 3 Lab Introduction
-In this module, we discussed the process of acquiring and evaluating data. We learned some basic tools to view the data to determine its quality, some common techniques for cleaning data, and to transform the given features in preparation to training a model. 
+In this module, we will look at how three basic kinds of classifiers (Decision Trees, Support Vector Machines, and Neural Nets) work and see how we can grade the performance of a classifier. One popular machine learning task is to predict a target that has category information. We learned how to compare and characterize the performance of a classifier to describe how model performance can be affected by internal parameter choice.
 
-[Clickable Link to Notebook](https://github.com/Bdowdle4/applied-ml-dowdle/blob/main/lab02/ml02_dowdle.ipynb)
+[Clickable Link to Notebook](https://github.com/Bdowdle4/applied-ml-dowdle/blob/main/lab03/ml03_dowdle.ipynb)
 
 ## Virtual Enviornment Set Up (Windows Users)
 **Task 1. Create .venv** Run the following command from the project root directory. Use PowerShell (not cmd):
@@ -75,9 +75,8 @@ What methods do you already know to inspect the data? Use these common methods e
 Analysis: What do you notice about the dataset? Are there any data issues?
 
 ### Section 2. Data Exploration and Preparation
-- 2.1 Explore Data Patterns and Distributions
-- 2.2 Handle Missing Values and Clean Data
-- 2.3 Feature Engineering
+- 2.1 Handle Missing Values and Clean Data
+- 2.2 Feature Engineering
 
 Analysis: What patterns or anomalies do you see? Do any features stand out?
 
@@ -87,12 +86,27 @@ Analysis: What patterns or anomalies do you see? Do any features stand out?
 
 Analysis: Why did you choose these features? How might they impact predictions?
 
-### Section 4. Splitting
-- 4.1 Basic Train/Test split
-- 4.2 Stratified Train/Test split
-- 4.3 Compare Results
+### Section 4. Train a Classification Model (Decision Tree)
+- 4.1 Split the Data
+- 4.2 Create and Train Model (Decision Tree)
+- 4.3 Predict and Evaluate Model Performance
+- 4.4 Report Confusion Matrix (as a heatmap)
+- 4.5 Report Decision Tree Plot
+  
+ Repeat for all three cases 
 
-Analysis: How well did the model perform? Any surprises in the results?
+Analysis: How well did the different cases perform? Are there any surprising results? Which inputs worked better? 
+
+### Section 5. Compare Alternative Models (SVC, NN)
+- 5.1 Train and Evaluate Model (SVC)
+- 5.2 Train and Evaluate Model (NN MLP)
+  
+Analysis: How well did each model perform? Are there any surprising results? Why might one model outperform the others?
+
+### Section 6. Final Thoughts & Insights
+- 6.1 Summarize Findings
+- 6.2 Discuss Challenges Faced
+- 6.3 Next Steps
 
 ---
 
