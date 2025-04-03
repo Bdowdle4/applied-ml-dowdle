@@ -1,7 +1,7 @@
 # Dowdle's Module 4 Lab Introduction
-In this module, we will look at how three basic kinds of classifiers (Decision Trees, Support Vector Machines, and Neural Nets) work and see how we can grade the performance of a classifier. One popular machine learning task is to predict a target that has category information. We learned how to compare and characterize the performance of a classifier to describe how model performance can be affected by internal parameter choice.
+In this module, we will start with a basic regression model where we use a a classifier to predict a target is continuous rather than discrete. We will look at curve fitting in general and then focus on linear regression. After discussing how to measure the performance, we will look at a couple techniques for doing non-linear regressions. Finally, we consider how to search in feature space and detect when overfitting occurred.
 
-[Clickable Link to Notebook](https://github.com/Bdowdle4/applied-ml-dowdle/blob/main/lab03/ml03_dowdle.ipynb)
+[Clickable Link to Notebook](https://github.com/Bdowdle4/applied-ml-dowdle/blob/main/lab04/ml04_dowdle.ipynb)
 
 ## Virtual Enviornment Set Up (Windows Users)
 **Task 1. Create .venv** Run the following command from the project root directory. Use PowerShell (not cmd):
@@ -75,38 +75,36 @@ What methods do you already know to inspect the data? Use these common methods e
 Analysis: What do you notice about the dataset? Are there any data issues?
 
 ### Section 2. Data Exploration and Preparation
-- 2.1 Handle Missing Values and Clean Data
-- 2.2 Feature Engineering
 
 Analysis: What patterns or anomalies do you see? Do any features stand out?
 
 ### Section 3. Feature Selection and Justification
-- 3.1 Choose features and target
-- 3.2 Define X and y
 
 Analysis: Why did you choose these features? How might they impact predictions?
 
-### Section 4. Train a Classification Model (Decision Tree)
+### Section 4. Train a Regression Model (Linear Regression)
 - 4.1 Split the Data
-- 4.2 Create and Train Model (Decision Tree)
-- 4.3 Predict and Evaluate Model Performance
-- 4.4 Report Confusion Matrix (as a heatmap)
-- 4.5 Report Decision Tree Plot
+- 4.2 Train and Evaluate Linear Regression Models (all 4 cases)
+- 4.3 Report Performance
   
- Repeat for all three cases 
+ Repeat for all four cases 
 
 Analysis: How well did the different cases perform? Are there any surprising results? Which inputs worked better? 
 
-### Section 5. Compare Alternative Models (SVC, NN)
-- 5.1 Train and Evaluate Model (SVC)
-- 5.2 Train and Evaluate Model (NN MLP)
+### Section 5. Compare Alternative Models
+- 5.1 Ridge Regression (L2 penalty)
+- 5.2 Elastic Net (L1 + L2 combined)
+- 5.3 Polynomial Regression
+- 5.4 Visualize Polynomial Cubic Fit (for 1 input feature)
+- 5.5 Compare All Models
+- 5.6 Visualize Higher Order Polynomial (for the same 1 input case)
   
 Analysis: How well did each model perform? Are there any surprising results? Why might one model outperform the others?
 
 ### Section 6. Final Thoughts & Insights
 - 6.1 Summarize Findings
-- 6.2 Discuss Challenges Faced
-- 6.3 Next Steps
+- 6.2 Discuss Challenges
+- 6.3 Optional Next Steps
 
 | Model Type | Case | Features Used | Accuracy | Precision | Recall | F1-Score | Notes |
 |------------|------|---------------|----------|-----------|--------|-----------|-------|
