@@ -106,26 +106,14 @@ Analysis: How well did each model perform? Are there any surprising results? Why
 - 6.2 Discuss Challenges
 - 6.3 Optional Next Steps
 
-| Model Type | Case | Features Used | Accuracy | Precision | Recall | F1-Score | Notes |
-|------------|------|---------------|----------|-----------|--------|-----------|-------|
-| **Decision Tree** | Case 1 | alone | 63% | 64% | 63% | 63% | - |
-|                   | Case 2 | age | 61% | 58% | 61% | 55% | - |
-|                   | Case 3 | age + family_size | 59% | 57% | 59% | 58% | - |
-| **SVM (RBF Kernel)** | Case 1 | alone | 63% | 64% | 63% | 63% | - |
-|                    | Case 2 | age | 63% | 66% | 63% | 52% | - |
-|                    | Case 3 | age + family_size | 63% | 66% | 63% | 52% | - |
-| **SVM (Linear Kernel)** | Case 1 | alone | 63% | 64% | 63% | 63% | - |
-|                    | Case 2 | age | 63% | 66% | 63% | 52% | - |
-|                    | Case 3 | age + family_size | 63% | 66% | 63% | 52% | - |
-| **SVM (Poly Kernel)** | Case 1 | alone | 63% | 64% | 63% | 63% | - |
-|                    | Case 2 | age | 63% | 66% | 63% | 52% | - |
-|                    | Case 3 | age + family_size | 63% | 66% | 63% | 52% | - |
-| **SVM (Sigmoid Kernel)** | Case 1 | alone | 63% | 64% | 63% | 63% | - |
-|                    | Case 2 | age | 63% | 66% | 63% | 52% | - |
-|                    | Case 3 | age + family_size | 63% | 66% | 63% | 52% | - |
-| **Neural Network (MLP)** | Case 1 | alone | 63% | 64% | 63% | 63% | - |
-|                    | Case 2 | age | 62% | 64% | 62% | 49% | - |
-|                    | Case 3 | age + family_size | 69% | 68% | 69% | 67% | - |
+Compare the train vs test results for each model:
+
+| Case | Feature(s) Used | Train R² | Test R² | Test RMSE | Test MAE |
+|-------|-----------|---------------|----------|-----------|--------|
+| 1 | age | 0.0096 | 0.0029 | 42.01 | 26.44 |
+| 2 | family_size | 0.0508 | 0.0291 | 41.46 | 25.90 |
+| 3 | age, family_size | 0.0763 | 0.0359 | 41.31 | 24.41 |
+| 4 | embark_town | 0.0044 | 0.0009 | 42.06 | 27.15 |
 
 ---
 
