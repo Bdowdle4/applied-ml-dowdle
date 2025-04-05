@@ -106,8 +106,6 @@ Analysis: How well did each model perform? Are there any surprising results? Why
 - 6.2 Discuss Challenges
 - 6.3 Optional Next Steps
 
-Compare the train vs test results for each model:
-
 | Case | Feature(s) Used | Train R² | Test R² | Test RMSE | Test MAE |
 |-------|-----------|---------------|----------|-----------|--------|
 | 1 | age | 0.0096 | 0.0029 | 42.01 | 26.44 |
