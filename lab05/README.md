@@ -1,7 +1,7 @@
 # Dowdle's Module 5 Lab Introduction
 In this module, we will start with a basic regression model where we use a a classifier to predict a target is continuous rather than discrete. We will look at curve fitting in general and then focus on linear regression. After discussing how to measure the performance, we will look at a couple techniques for doing non-linear regressions. Finally, we consider how to search in feature space and detect when overfitting occurred.
 
-[Clickable Link to Notebook](https://github.com/Bdowdle4/applied-ml-dowdle/blob/main/lab04/ml04_dowdle.ipynb)
+[Clickable Link to Notebook](https://github.com/Bdowdle4/applied-ml-dowdle/blob/main/lab05/ensemble-dowdle.ipynb)
 
 ## Virtual Enviornment Set Up (Windows Users)
 **Task 1. Create .venv** Run the following command from the project root directory. Use PowerShell (not cmd):
