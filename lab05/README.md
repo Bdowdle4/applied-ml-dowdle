@@ -132,20 +132,20 @@ Include a professional README.md. Include:
 Wine Quality Dataset (Red wine samples from the north of Portugal. The goal is to model wine quality based on physicochemical tests)
 
 Features included in this dataset: 
-1. fixed acidity     mostly tartaric acid
-2. volatile acidity  mostly acetic acid (vinegar)
-3. citric acid       can add freshness and flavor
-4. residual sugar    remaining sugar after fermentation
-5. chlorides         salt content
-6. free sulfur dioxide  protects wine from microbes
-7. total sulfur dioxide sum of free and bound forms
-8. density           related to sugar content
-9. pH                acidity level (lower = more acidic)
-10. sulphates        antioxidant and microbial stabilizer
-11. alcohol          % alcohol by volume
+1. fixed acidity - mostly tartaric acid
+2. volatile acidity - mostly acetic acid (vinegar)
+3. citric acid - can add freshness and flavor
+4. residual sugar - remaining sugar after fermentation
+5. chlorides - salt content
+6. free sulfur dioxide - protects wine from microbes
+7. total sulfur dioxide - sum of free and bound forms
+8. density - related to sugar content
+9. pH - acidity level (lower = more acidic)
+10. sulphates - antioxidant and microbial stabilizer
+11. alcohol - % alcohol by volume
 
 The target variable is:   
-quality (integer score from 0 to 10, rated by wine tasters)
+1. quality - integer score from 0 to 10, rated by wine tasters
 
 - If you have a direct link to the CSV file, use:
   ```
