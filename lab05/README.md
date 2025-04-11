@@ -1,5 +1,10 @@
 # Dowdle's Module 5 Lab Introduction
-In this module, we will start with a basic regression model where we use a a classifier to predict a target is continuous rather than discrete. We will look at curve fitting in general and then focus on linear regression. After discussing how to measure the performance, we will look at a couple techniques for doing non-linear regressions. Finally, we consider how to search in feature space and detect when overfitting occurred.
+In this module, we will look at how we can combine an ensemble of models to achieve better performance. We will look at serial and parallel combinations of models, the problems with data sets that contain a high number of features, and techniques for reducing the dimensionality of the data. We will look at some prebuilt models that use decision trees as their basic components. Common types of ensemble models include:
+
+- Boosted Decision Trees – Models train sequentially, with each new tree correcting the errors of the previous one.
+- Random Forest – Multiple decision trees train in parallel, each on a random subset of the data, and their predictions are averaged.
+- Voting Classifier (Heterogeneous Models) – Combines different types of models (e.g., Decision Tree, SVM, and Neural Network) by taking the majority vote or average prediction.
+- Cross Validation – Divides data into multiple folds to improve the reliability of performance estimates.
 
 [Clickable Link to Notebook](https://github.com/Bdowdle4/applied-ml-dowdle/blob/main/lab05/ensemble-dowdle.ipynb)
 
@@ -82,36 +87,27 @@ Analysis: What patterns or anomalies do you see? Do any features stand out?
 
 Analysis: Why did you choose these features? How might they impact predictions?
 
-### Section 4. Train a Regression Model (Linear Regression)
-- 4.1 Split the Data
-- 4.2 Train and Evaluate Linear Regression Models (all 4 cases)
-- 4.3 Report Performance
-  
- Repeat for all four cases 
+### Section 4. Split the Data into Train and Test Sets
 
-Analysis: How well did the different cases perform? Are there any surprising results? Which inputs worked better? 
+Analysis: Did the sets split properly? Is there any data leakage?
 
-### Section 5. Compare Alternative Models
-- 5.1 Ridge Regression (L2 penalty)
-- 5.2 Elastic Net (L1 + L2 combined)
-- 5.3 Polynomial Regression
-- 5.4 Visualize Polynomial Cubic Fit (for 1 input feature)
-- 5.5 Compare All Models
-- 5.6 Visualize Higher Order Polynomial (for the same 1 input case)
-  
+### Section 5. Evaluate Model Performance (Choose 2)
+- Random Forest (200, max depth=10)
+- Gradient Boosting(100)
+
+### Section 6. Compare Results
+
 Analysis: How well did each model perform? Are there any surprising results? Why might one model outperform the others?
 
-### Section 6. Final Thoughts & Insights
-- 6.1 Summarize Findings
-- 6.2 Discuss Challenges
-- 6.3 Optional Next Steps
+### Section 7. Conclusions and Insights
 
-| Case | Feature(s) Used | Train R² | Test R² | Test RMSE | Test MAE |
-|-------|-----------|---------------|----------|-----------|--------|
-| 1 | age | 0.0096 | 0.0029 | 42.01 | 26.44 |
-| 2 | family_size | 0.0508 | 0.0291 | 41.46 | 25.90 |
-| 3 | age, family_size | 0.0763 | 0.0359 | 41.31 | 24.41 |
-| 4 | embark_town | 0.0044 | 0.0009 | 42.06 | 27.15 |
+Analysis: Base all your reasoning on data. Feel free to tune parameters if you like. List the next steps you'd like to try if you were in a competition to build the best predictor.
+
+
+| Model | Train Accuracy | Test Accuracy | Train F1 | Test F1 | Accuracy Gap | F1 Gap |
+|-------|-----------|---------------|----------|-----------|--------|--------|
+| Random Forest (200, max depth=10) | 0.972401 | 0.845588 | 0.971256 | 0.803440 | 0.126813 | 0.167816 |
+| Gradient Boosting (100) | 0.959522 | 0.827206| 0.957773 | 0.804395| 0.132316 | 0.153379 |
 
 ---
 
@@ -119,10 +115,10 @@ Analysis: How well did each model perform? Are there any surprising results? Why
 
 Verify your repository contains:
 
-- [ ] Useful .gitignore (that keeps .venv out of GitHub)
+- [x] Useful .gitignore (that keeps .venv out of GitHub)
 - [ ] Professional Jupyter Notebook with numbered sections   
-- [ ] Useful README.md
-- [ ] Useful requirements.txt
+- [x] Useful README.md
+- [x] Useful requirements.txt
 
 Include a professional README.md. Include:
 - a personalized title
@@ -133,15 +129,35 @@ Include a professional README.md. Include:
 ---
 
 ## Dataset 
-Titanic Dataset (Predict survival based on passenger features like age, gender, and class)
+Wine Quality Dataset (Red wine samples from the north of Portugal. The goal is to model wine quality based on physicochemical tests)
 
-- We use the built-in dataset from Seaborn:
-   ```
-   import seaborn as sns
-   titanic = sns.load_dataset("titanic")
-   ```
-- Additional dataset available on Kaggle:
-   [Kaggle Titanic](https://www.kaggle.com/datasets/akshaysehgal/titanic-data-for-data-preprocessing)
+Features included in this dataset: 
+1. fixed acidity          mostly tartaric acid
+2. volatile acidity       mostly acetic acid (vinegar)
+3. citric acid            can add freshness and flavor
+4. residual sugar         remaining sugar after fermentation
+5. chlorides              salt content
+6. free sulfur dioxide    protects wine from microbes
+7. total sulfur dioxide   sum of free and bound forms
+8. density                related to sugar content
+9. pH                     acidity level (lower = more acidic)
+10. sulphates             antioxidant and microbial stabilizer
+11. alcohol               % alcohol by volume
+
+The target variable is:
+quality (integer score from 0 to 10, rated by wine tasters)
+
+- If you have a direct link to the CSV file, use:
+  ```
+  wget https://example.com/path/to/your.csv -P /path/to/your/project/folder
+  ```
+- If you already have the file downloaded copy the file, use:
+  ```
+  cp "C:\Example\Path\to\your\file.csv" "C:\Path\to\Desitnation" 
+  ```
+
+- Additional dataset available on UCI Machine Learning Repository:
+   [Wine Quality Dataset](https://archive.ics.uci.edu/dataset/186/wine+quality)
 
 --- 
 
